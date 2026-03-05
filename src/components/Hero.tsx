@@ -1,4 +1,5 @@
 import './Hero.css'
+import SimpleButton from './SimpleButton'
 
 function Hero() {
   return (
@@ -16,6 +17,9 @@ function Hero() {
           <button className="btn btn-secondary" onClick={() => alert('查看文档')}>
             查看文档
           </button>
+        </div>
+        <div className="hero-simple-button">
+          <SimpleButton text="立即试用" onClick={() => alert('欢迎试用 SimpleButton！')} />
         </div>
       </div>
     </section>

@@ -30,6 +30,10 @@
   flex-wrap: wrap;
 }
 
+.hero-simple-button {
+  margin-top: 28px;
+}
+
 .hero .btn {
   background-color: white;
   color: #667eea;
