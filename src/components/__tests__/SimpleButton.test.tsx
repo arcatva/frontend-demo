@@ -41,4 +41,18 @@ describe('SimpleButton', () => {
     expect(button).toBeInTheDocument()
     expect(button).toHaveTextContent('')
   })
+
+  test('uses custom aria-label when provided', () => {
+    render(<SimpleButton text="Button text" ariaLabel="Custom label" />)
+    const button = screen.getByRole('button', { name: /custom label/i })
+    expect(button).toBeInTheDocument()
+    expect(button).toHaveAttribute('aria-label', 'Custom label')
+  })
+
+  test('falls back to text for aria-label when not provided', () => {
+    render(<SimpleButton text="Default text" />)
+    const button = screen.getByRole('button', { name: /default text/i })
+    expect(button).toBeInTheDocument()
+    expect(button).toHaveAttribute('aria-label', 'Default text')
+  })
 })
