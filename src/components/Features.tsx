@@ -1,4 +1,5 @@
 import './Features.css'
+import SimpleButton from './SimpleButton'
 
 const features = [
   {
@@ -36,6 +37,9 @@ function Features() {
               <p>{feature.description}</p>
             </div>
           ))}
+        </div>
+        <div className="features-action">
+          <SimpleButton text="了解更多功能" onClick={() => alert('更多功能即将上线')} />
         </div>
       </div>
     </section>
