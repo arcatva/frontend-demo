@@ -1,5 +1,6 @@
 import './Hero.css'
 import SimpleButton from './SimpleButton'
+import SimpleInput from './SimpleInput'
 
 function Hero() {
   return (
@@ -25,6 +26,7 @@ function Hero() {
             onClick={() => alert('欢迎试用 SimpleButton！')}
           />
         </div>
+        <SimpleInput />
       </div>
     </section>
   )
