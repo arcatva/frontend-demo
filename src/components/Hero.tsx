@@ -26,6 +26,13 @@ function Hero() {
             onClick={() => alert('欢迎试用 SimpleButton！')}
           />
         </div>
+        <button
+          type="button"
+          className="hero-tiny-button"
+          onClick={() => alert('更多功能即将上线')}
+        >
+          更多功能
+        </button>
         <SimpleInput />
       </div>
     </section>
