@@ -1,0 +1,52 @@
+.about {
+  padding: 80px 20px;
+  min-height: calc(100vh - 200px);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text {
+  margin-bottom: 50px;
+}
+
+.about-text h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.team-section h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tech-tag {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+  }
+}
