@@ -19,7 +19,11 @@ function Hero() {
           </button>
         </div>
         <div className="hero-simple-button">
-          <SimpleButton text="立即试用" onClick={() => alert('欢迎试用 SimpleButton！')} />
+          <SimpleButton
+            text="立即试用"
+            ariaLabel="立即试用前端演示"
+            onClick={() => alert('欢迎试用 SimpleButton！')}
+          />
         </div>
       </div>
     </section>

@@ -1,20 +1,25 @@
 .simple-button {
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
-  color: #fff;
-  border: none;
-  border-radius: 999px;
-  padding: 12px 24px;
-  font-size: 16px;
+  background: #ffffff;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.28);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .simple-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 22px rgba(79, 70, 229, 0.34);
-  filter: brightness(1.04);
+  transform: translateY(-1px);
+  border-color: #9ca3af;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.12);
+}
+
+.simple-button:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
 }
 
 .simple-button:active {
